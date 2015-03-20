@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/ratchet.css" rel="stylesheet">
+    <script src="js/ratchet.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#handle").click(function(){
+                var handle_area = $("#handle_area");
+                if (handle_area.css("display") == 'none'){
+                    handle_area.css("display", 'block');
+                }else{
+                    handle_area.css("display", 'none');
+                }
+            });
+        });
+    </script>
+    <title>订单中心</title>
+</head>
+<body>
+<div class="content">
+    <button class="btn btn-primary btn-block">投诉人信息</button>
+    <ul class="table-view">
+        <li class="table-view-cell">
+            姓名：吴豪
+        </li>
+        <li class="table-view-cell">
+            性别：男
+        </li>
+        <li class="table-view-cell">
+            电话：110
+        </li>
+        <li class="table-view-cell">
+            手机：15857262155
+        </li>
+        <li class="table-view-cell">
+            证件类型：身份证
+        </li>
+        <li class="table-view-cell">
+            证件号：4123232323XXX
+        </li>
+        <li class="table-view-cell">
+            邮编：324234
+        </li>
+    </ul>
+    <button class="btn btn-primary btn-block">被投诉单位</button>
+    <ul class="table-view">
+        <li class="table-view-cell">
+            单位类型：国企
+        </li>
+        <li class="table-view-cell">
+            单位名称：中石油
+        </li>
+    </ul>
+    <button class="btn btn-primary btn-block">投诉描述</button>
+    <ul class="table-view">
+        <li class="table-view-cell">
+            单位类型：国企
+        </li>
+        <li class="table-view-cell">
+            单位名称：中石油
+        </li>
+        <li class="table-view-cell">
+            发生时间：2015.03.11
+        </li>
+        <li class="table-view-cell">
+            手机：15857262155
+        </li>
+        <li class="table-view-cell">
+            投诉方式：网络
+        </li>
+        <li class="table-view-cell">
+            投诉人数：3人
+        </li>
+        <li class="table-view-cell">
+            问题类型：其它
+        </li>
+        <li class="table-view-cell">
+            旅游类型：其它
+        </li>
+        <li class="table-view-cell media">
+            <div class="media-body">
+                投诉事由：
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+    </ul>
+    <button class="btn btn-primary btn-block">转移记录</button>
+    <div class="media-body">
+        <p>暂无数据。</p>
+    </div>
+    <button class="btn btn-primary btn-block btn-outlined">保存处理内容</button>
+    <button class="btn btn-primary btn-block btn-outlined" id="handle">处理投诉</button>
+    <div style="display: none" id="handle_area">
+        <button class="btn btn-primary btn-block">处理情况</button>
+        <ul class="table-view">
+            <li class="table-view-cell">
+                处理方式：国企
+            </li>
+            <li class="table-view-cell">
+                受理单位：国企
+            </li>
+            <li class="table-view-cell">
+                受理人：中石油
+            </li>
+            <li class="table-view-cell">
+                赔偿情况：国企
+            </li>
+            <li class="table-view-cell media">
+                <div class="media-body">
+                    说明：
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+                <div class="media-body">
+                    处理结果：
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+        </ul>
+        <button class="btn btn-primary btn-block btn-outlined">保存处理结果</button>
+    </div>
+</div>
+</body>
+
+</html>
